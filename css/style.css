@@ -1,0 +1,102 @@
+* {     /*este asterisco é chamado de Reset, e serve para comandos a todas as tags do site. Ou seja, é como a tag HEAD do index. Com ela você não precisa ficar configurando cada espaçamento, neste caso. */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+   height: 100%; 
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background: rgb(54,77,204); /*esta formatação de fundo em degradê, faz-se através do site https://cssgradient.io/, muito usado pelos desenvolvedores. as 2 linhas são copiadas do site, assim como fazemos com as fontes através do google.*/
+    background: linear-gradient(176deg, rgba(54,77,204,1) 0%, rgba(19,35,124,1) 100%);
+} 
+
+.avatar {
+    width: 100px;
+    height: 110px;
+    border-radius: 50px; /*comando para deixar a borda arredondada. Quanto maior o valor (até 50px), mais arredondado fica.*/
+    border: 3px solid white;
+    box-shadow: 0 0 20px white; /*comando para colocar sombra e brilho no elemento*/
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive; /*fonte obtiva no google fonts, muito usado por desenvolvedores*/
+    font-weight: 100px;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social {
+    display: flex; /*comando para criar uma flexbox, ou seja, alinhar os elementos lado a lado, dentro de uma lista <ul><li>*/
+    justify-content: space-around; /*comando que cria um espaçamento igual no entorno de todos os icones/elementos da linha. é a forma mais correta para colocar a lista lado a lado e com o mesmo espaço entre os elementos*/
+    /*justify-content: space-between = comando para espaçar os icones/elementos em toda a linha, ou seja, criar um espaçamento igual entre eles na linha toda*/
+    /*justify-content: center = comando exclusivo para centralizar lista. Só funciona quando se tem um display flex*/
+    list-style: none; /*remove o ponto branco que aparece no icone. é usado o comando list exatamente por o elemento estar dentro de uma lista <ul> <li>*/
+    margin: 20px 0;
+}
+
+.social img {
+    width: 33px;
+}
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin: 10px 20px;
+}
+
+.links-list li a {
+    display: block;
+    background:white;
+    padding: 15px 20px;
+    border-radius: 5px; 
+    text-decoration: none;
+    color: rgb(54,77,204);
+    font-weight:bold;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white; 
+}
+
+.links-list li a span {
+    color:grey;
+    display: block; /*este comando coloca as frases em blocos, ou seja, uma abaixo da outra*/
+    margin-top: 10px;
+}
+
+.contact {
+    list-style: none;
+}
+
+.contact li {
+    margin: 10px 20px;
+}
+
+.contact li a {
+    display: block;
+    background:white;
+    padding: 15px 20px;
+    border-radius: 5px; 
+    text-decoration: none;
+    color: rgb(54,77,204);
+    font-weight:bold; 
+}
+
+.contact li a span {
+    color:grey;
+    display: block; /*este comando coloca as frases em blocos, ou seja, uma abaixo da outra*/
+    margin-top: 10px;
+}
